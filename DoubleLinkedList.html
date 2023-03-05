@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Event Registration</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<h1>Event Registration</h1>
+<p>Welcome to our exciting event!</p>
+<a href="#registration-form" class="register-btn">Register Now</a>
+</header>
+<section class="key-speakers" id="key-speakers">
+<h2>Key Speakers</h2>
+<div class="speaker-card">
+<img src="speaker1.jpg" alt="Speaker 1"  width="140" height="150">
+<h3>Rishi Shukla</h3>
+<p>CEO of XYZ Company</p>
+<p>Rishi Shukla is the CEO of ASCENT ACADEMY...</p>
+</div>
+<div class="speaker-card">
+<img src="speaker2.jpg" alt="Speaker 2">
+<h3>John Smith</h3>
+<p>Author of Best-Selling Book</p>
+<p>John Smith is a well-known author and speaker...</p>
+</div>
+</section>
+<section class="schedule" id="schedule">
+<h2>Schedule</h2>
+<table>
+<tr>
+<th>Time</th>
+<th>Event</th>
+</tr>
+<tr>
+<td>9:00 AM</td>
+<td>Registration</td>
+</tr>
+<tr>
+<td>10:00 AM</td>
+<td>Opening Keynote</td>
+</tr>
+<tr>
+<td>11:00 AM</td>
+<td>Breakout Session 1</td>
+</tr>
+<tr>
+<td>12:00 PM</td>
+<td>Lunch</td>
+</tr>
+<tr>
+<td>1:00 PM</td>
+<td>Breakout Session 2</td>
+</tr>
+<tr>
+<td>2:00 PM</td>
+<td>Closing Keynote</td>
+</tr>
+</table>
+</section>
+<section class="events" id="events">
+<h2>Other Events</h2>
+<ul>
+<li>Networking Reception (Day 1)</li>
+<li>Panel Discussion (Day 2)</li>
+<li>Workshop (Day 3)</li>
+</ul>
+</section>
+<section class="venue" id="venue">
+<h2>Venue</h2>
+<p>The event will be held at:</p>
+<address>
+123 Main St<br>
+Anytown, USA 12345
+</address>
+</section>
+<section class="registration-form" id="registration-form">
+<h2>Register for the Event</h2>
+<form action="submit.php" method="post">
+<label for="name">Name:</label>
+<input type="text" id="name" name="name" required>
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" required>
+<label for="phone">Phone:</label>
+<input type="tel" id="phone" name="phone" required>

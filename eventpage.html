@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<style>
+
+		/* Styling the body */
+		body {
+			margin: 0;
+			padding: 0;
+			
+			background-position: left;
+			background-repeat: no-repeat;
+			background-size: 50%;
+		}
+		
+		/* Styling section, giving background
+			image and dimensions */
+		section {
+			width: 100%;
+			height: 100vh;
+			
+            
+			background-size: cover;
+		}
+		
+		/* Styling the left floating section */
+		section .leftBox {
+			width: 50%;
+			height: 100%;
+			float: left;
+			padding: 50px;
+			box-sizing: border-box;
+		}
+		
+		/* Styling the background of
+			left floating section */
+		section .leftBox .content {
+			color: #05232e;
+			background: rgba(97, 97, 171, 0.492);
+			padding: 40px;
+			transition: .5s;
+		}
+		
+		/* Styling the hover effect
+			of left floating section */
+		section .leftBox .content:hover {
+			background: #0c0f5f;
+			color: aliceblue;
+		}
+		
+		/* Styling the header of left
+			floating section */
+		section .leftBox .content h1 {
+			margin: 0;
+			padding: 0;
+			font-size: 50px;
+			text-transform: uppercase;
+		}
+		
+		/* Styling the paragraph of
+			left floating section */
+		section .leftBox .content p {
+			margin: 10px 0 0;
+			padding: 0;
+		}
+		
+		/* Styling the three events section */
+		section .events {
+			position: relative;
+			width: 50%;
+			height: 100%;
+			background: #0c0f5f;
+			float: right;
+			box-sizing: border-box;
+		}
+		
+		/* Styling the links of
+		the events section */
+		section .events ul {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			margin: 0;
+			padding: 40px;
+			box-sizing: border-box;
+		}
+		
+		/* Styling the lists of the event section */
+		section .events ul li {
+			list-style: none;
+			background: #576293;
+			box-sizing: border-box;
+			height: 200px;
+			margin: 15px 0;
+		}
+		
+		/* Styling the time class of events section */
+		section .events ul li .time {
+			position: relative;
+			padding: 20px;
+			background: #34649b;
+			box-sizing: border-box;
+			width: 30%;
+			height: 100%;
+			float: left;
+			text-align: center;
+			transition: .5s;
+		}
+		
+		/* Styling the hover effect
+			of events section */
+		section .events ul li:hover .time {
+			background: #980e83b7;
+		}
+		
+		/* Styling the header of time
+			class of events section */
+		section .events ul li .time h2 {
+			position: absolute;
+			margin: 0;
+			padding: 0;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			color: #fff;
+			font-size: 60px;
+			line-height: 30px;
+		}
+		
+		/* Styling the texts of time
+		class of events section */
+		section .events ul li .time h2 span {
+			font-size: 30px;
+		}
+		
+		/* Styling the details
+		class of events section */
+		section .events ul li .details {
+			padding: 20px;
+			background: #fff;
+			box-sizing: border-box;
+			width: 70%;
+			height: 100%;
+			float: left;
+		}
+		
+		/* Styling the header of the
+		details class of events section */
+		section .events ul li .details h3 {
+			position: relative;
+			margin: 0;
+			padding: 0;
+			font-size: 22px;
+		}
+		
+		/* Styling the lists of details
+		class of events section */
+		section .events ul li .details p {
+			position: relative;
+			margin: 10px 0 0;
+			padding: 0;
+			font-size: 16px;
+		}
+		
+		/* Styling the links of details
+		class of events section */
+		section .events ul li .details a {
+			display: inline-block;
+			text-decoration: none;
+			padding: 10px 15px;
+			border: 1.5px solid #262626;
+			margin-top: 8px;
+			font-size: 18px;
+			transition: .5s;
+		}
+		
+		/* Styling the details class's hover effect */
+		section .events ul li .details a:hover {
+			background: #980e83b7;
+			color: #fff;
+			border-color: #4d0a43b7;
+		}
+
+
+		button{
+			
+  appearance: none;
+  background-color: rgba(75, 74, 81, 0.611);
+  border: 2px solid #1a1a1aea;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #302828;
+  cursor: pointer;
+ 
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+  will-change: transform;
+}
+button:hover {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+.button-28:disabled {
+	
+	pointer-events: none;
+  }
+  
+  .button-28:hover {
+	color: #fff;
+	background-color: #1A1A1A;
+	box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+	transform: translateY(-2px);
+  }
+  
+  .button-28:active {
+	box-shadow: none;
+	transform: translateY(0);
+  }
+
+	</style>
+</head>
+
+<body>
+	<section>
+		<div class="leftBox">
+			<div class="content">
+				<h1>
+					ASCENT EVENTS
+				</h1>
+				
+<p>
+    "ASCENT ACADEMY 
+      was established in 1995 as the School
+      Wing of Ascent Academy Junior College with the 
+      objective of providing a feeder institution of
+       quality and excellence to the management’s core 
+       educational ventures. Within a short time span
+        of 12 years, the Junior College and the School
+         had put itself among elite Higher Secondary and 
+         High Schools of Assam, buoyed by consistent excellent 
+         results. Along with such academic distinctions achieved
+          by the Ascentians, the Ascent Group of Institutions
+           has painstakingly built up a tradition of discipline over these years."
+				</p>
+                
+                </div>
+				<p>	<button class="btn btn-success" onclick="location.href='./regform.html';"> REGISTRATION LINK</button>  
+
+                </p>
+				<img height="300" weidth="300" src="./image/download1.jpg" alt="" style="padding-left: 160px;">
+
+			
+		</div>
+
+		<div class="events">
+			<ul>
+				<li>
+					<div class="time">
+						<h2>
+							15 <br><span>March</span>
+						</h2>
+					</div>
+					<div class="details">
+						<h3>
+							Sunder Pichai
+						</h3>
+						
+<p>
+							
+                            Pichai Sundararajan, better known as Sundar Pichai,
+                             is an Indian-American business executive. He is the
+                              chief executive officer of Alphabet Inc. and its subsidiary
+                               Google. Born in Madurai, India, Pichai earned his degree
+                                from IIT Kharagpur in metallurgical engineering.
+						</p>
+
+
+						<a href="./SunderPichai.html">View Details</a>
+					</div>
+					<div style="clear: both;"></div>
+				</li>
+
+				<li>
+					<div class="time">
+						<h2>
+							16 <br><span>March</span>
+						</h2>
+					</div>
+					<div class="details">
+						<h3>
+                            Sachin Bansal						</h3>
+						
+<p>
+     Sachin Bansal is an Indian entrepreneur.
+      He is best known as the founder of Flipkart.
+       During his over 11 year career at Flipkart,
+        Bansal was CEO and chairman. In 2018, Bansal 
+        exited Flipkart following the Walmart deal.
+						</p>
+
+						<a href="file:///C:/Users/sushr/OneDrive/Desktop/ascent/sachin.html">View Details</a>
+					</div>
+					<div style="clear:both;"></div>
+				</li>
+
+				<li>
+					<div class="time">
+						<h2>
+							17 <br><span>March</span>
+						</h2>
+					</div>
+					<div class="details">
+						<h3>
+                            Natarajan Chandrasekaran
+						</h3>
+						
+<p>
+     Natarajan Chandrasekaran is an Indian businessman,
+      and the chairman of Tata Sons. He was chief operating 
+      officer and executive director of Tata Consultancy Services,
+       where in 2009, he became chief executive officer. He was
+        also the chairman of Tata Motors and Tata Global Beverages.
+						</p>
+
+
+						<a href="file:///C:/Users/sushr/OneDrive/Desktop/ascent/nataraj.html">View Details</a>
+					</div>
+					<div style="clear:both;"></div>
+				</li>
+			</ul>
+		</div>
+	</section>
+</body>
+
+</html>
